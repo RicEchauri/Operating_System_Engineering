@@ -200,6 +200,8 @@ UPROGS=\
 	$U/_pingpong\
 	$U/_primes\
 	$U/_find\
+	$U/_xargs\
+	$U/_trace\
 	
 
 
