@@ -146,3 +146,12 @@ syscall(void)
     p->trapframe->a0 = -1;
   }
 }
+char* syscallnames[] = {
+"",
+"fork","exit","wait","pipe",
+"read","kill","exec","fstat",
+"chdir","dup","getpid","sbrk",
+"sleep","uptime","open","write",
+"mknod","unlink","link","mkdir",
+"close","trace",
+};
