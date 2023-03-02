@@ -49,8 +49,7 @@ find (char *path , char* filename)
   }
   
   if(strlen(path) + 1 + DIRSIZ + 1 > sizeof buf){
-    printf("find: path too long\n");
-    break;                                                                                                                                                                                                                                                                                    
+    printf("find: path too long\n");                                                                                                                                                                                                                                                                                   
   }
   strcpy(buf, path); //copia el contenido de path al buff
   p = buf+strlen(buf);

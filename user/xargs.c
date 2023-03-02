@@ -13,9 +13,9 @@ int main(int argc,char **argv)
   
   for (int idx=1; idx<argc; idx++)
   {
-    arg_array[arg_count++]=argv[i];
+    arg_array[arg_count++]=argv[idx];
   }
-  while (nun_byts_readed)
+  while (num_byts_readed)
   {
     int pos=0;
     int pos_1=0;
@@ -29,15 +29,15 @@ int main(int argc,char **argv)
       if(current_char==' ')
       {
         buf[pos++]=0;
-        arg_arrat[arg_count++] = &buffer[pos_1];
+        arg_array[arg_count++] = &buf[pos_1];
         pos_1=pos;
       }else if(current_char=='\n')
       {
-        arg_arrat[arg_count++] = &buffer[pos_1];
+        arg_array[arg_count++] = &buf[pos_1];
         pos_1=pos; 
       }else
       {
-        buf[pos++]=curretn_char;
+        buf[pos++]=current_char;
         break;
       }
       
